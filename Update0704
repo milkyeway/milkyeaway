@@ -124,6 +124,10 @@
         .img-fluidd {
             width: 100%;
         }
+        a:hover{
+            color: #FFF;
+            text-decoration:none;
+        }
     </style>
 </head>
 
@@ -586,24 +590,24 @@
                     <h3 class="text-center" style="padding: 15px; letter-spacing:6px">課程資訊</h3>
                 </div>
                 <div class="col-lg-6 col-md-4 col-sm-12 col-xd-12">
-                    <p>
+                    <h5>
                         地&nbsp;&nbsp;&nbsp;&nbsp;點：張榮發國際會議中心(台北市中正區中山南路11號)
-                    </p>
-                    <table width="100%">
+                    </h5>
+                    <table width="100%" style="margin-top:15px;">
                         <thead>
-                            <tr style="background-color: #fff; color: #666;">
-                                <th style="color:#e73e0c;">兩堂合報最優惠</th>
-                                <th style="color:#e73e0c;">單堂早鳥優惠</th>
-                                <th style="color:#e73e0c;">單堂一般票</th>
-                                <th style="color:#e73e0c;">單堂三人以上</th>
+                            <tr style="background-color: #fff; color: #666; text-align: center ">
+                                <th style="color:#e73e0c; padding:10px 1px;">兩堂合報最優惠</th>
+                                <th style="color:#e73e0c; padding:10px 1px;">單堂早鳥優惠</th>
+                                <th style="color:#e73e0c; padding:10px 1px;">單堂一般票</th>
+                                <th style="color:#e73e0c; padding:10px 1px;">單堂三人以上</th>
                             </tr>
                         </thead>
                         <tbody>
-                            <tr>
-                                <td style="background-color:#ff840a; color:#FFF;">每人7,400元</td>
-                                <td style="background-color:#e73e0c; color:#FFF;">每人4,000元</td>
-                                <td style="background-color: rgb(122, 122, 122)">每人4,500元</td>
-                                <td style="background-color: rgb(197, 197, 197); color:#e73e0c;">每人3,700元</td>
+                            <tr style="text-align: center">
+                                <td style="background-color:#ff840a; color:#FFF; padding:10px 1px;">每人7,400元</td>
+                                <td style="background-color:#e73e0c; color:#FFF; padding:10px 1px;">每人4,000元</td>
+                                <td style="background-color: rgb(122, 122, 122); padding:10px 1px;">每人4,500元</td>
+                                <td style="background-color: rgb(197, 197, 197); color:#e73e0c; padding:10px 1px;">每人3,700元</td>
                             </tr>
                             <tr>
                                 <!-- colspan 要橫跨的列數，不可超過表格最多列，否則瀏覽器不支援可能會表格錯亂 -->
@@ -615,23 +619,23 @@
                         </tbody>
                     </table>
                     <div class="text-small" style="margin-top:1rem;">
-                        <p style="margin-bottom:0;">★想找人團報一起享優惠價嗎？課程專屬團報區，歡迎尋找你的學習夥伴，相約來上課！
+                        <p style="margin-bottom:0; font-size: 14px;">★想找人團報一起享優惠價嗎？課程專屬團報區，歡迎尋找你的學習夥伴，相約來上課！
                             <a style="color: #fff100;" href="http://bit.ly/2Ful0ug"
                                 target="_blank">http://bit.ly/2Ful0ug</a>
                         </p>
-                        <p style="margin-bottom:0;">活動洽詢：02-8773-9808 分機355　楊小姐
+                        <p style="margin-bottom:0; font-size: 14px;">活動洽詢：02-8773-9808 分機355　楊小姐
                             <!-- Mail超連結 a href="mailto:" -->
                             <a style="color: #fff100;" href="mailto:karen.yang@managertoday.com.tw"
                                 target="_blank">karen.yang@managertoday.com.tw</a></p>
-                        <p>客服專線：02-8771-6326　 服務時間：週一到週五9:30~12:30；13:30~17:00</p>
+                        <p style="font-size: 14px;">客服專線：02-8771-6326　 服務時間：週一到週五9:30~12:30；13:30~17:00</p>
                     </div>
                     <div class="btn">
-                        <div id="btn1" style="min-width: 120px; background-color:#ff840a; border-radius: 5px;">
-                            <a class="" style="color: #FFF"
+                        <div class="" id="btn1" style="min-width: 120px; background-color:#ff840a; border-radius: 5px; padding: 10px 15px;">
+                            <a class="" style="color: #FFF; text-decoration:none;"
                                 href="https://www.accupass.com/event/1905240852461561236433?_ga=2.129712332.1127498617.1562029435-109665224.1561613939"
                                 target="_blank">線上報名</a></div>
-                        <div id="btn2" style="min-width: 120px; background-color:#0abaff; border-radius: 5px;">
-                            <a class="" style="color: #FFF" href="https://edm.managertoday.com.tw/lead/signup.pdf"
+                        <div class="" id="btn2" style="min-width: 120px; background-color:#0abaff; border-radius: 5px; padding: 10px 15px;">
+                            <a class="" style="color: #FFF; text-decoration:none;" href="https://edm.managertoday.com.tw/lead/signup.pdf"
                                 target="_blank">下載報名表</a>
                         </div>
                         <!-- <input type="button" value="線上報名" id="btn1">
