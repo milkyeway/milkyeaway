@@ -120,6 +120,7 @@
             font-size: 20px;
         }
 
+        /* 底圖佔滿螢幕寬 */
         .img-fluidd {
             width: 100%;
         }
@@ -127,7 +128,7 @@
 </head>
 
 <body>
-    <!-- navbar className, navbar-expand-md 直到中尺寸才展開 (≥768px時，寬展開為720px), navbar-dark 文字顏色, .bg-dark 背景顏色 fixed-top緊貼上 -->
+    <!-- navbar className, navbar-expand-md 直到中尺寸才展開 (≥768px時，寬展開為720px), navbar-dark 文字顏色, .bg-dark 背景顏色(可寫CSS改顏色) fixed-top緊貼上 -->
     <nav class="navbar navbar-expand-md navbar-dark fixed-top">
         <!-- navbar-brand 左上LOGO位置 -->
         <div class="container">
@@ -149,7 +150,7 @@
 
             <!-- .collapse.navbar-collapse 用於外層中斷點群組和隱藏導覽列內容 -->
             <!-- 選單項目&三明治式折疊選單 -->
-            <!-- text-center 漢堡選單出現時置中, justify-content-end 展開時菜單向右靠, -->
+            <!-- text-center 三明治選單出現時置中, justify-content-end 展開時菜單向右靠, -->
             <div class="collapse navbar-collapse text-center justify-content-end" id="navbarSupportedContent">
                 <ul class="navbar-nav">
                     <li class="nav-item ">
@@ -162,6 +163,7 @@
                         <a class="nav-link" href="https://edm.managertoday.com.tw/lead/signup.pdf"
                             target="_blank"><b>傳真報名</b></a>
                     </li>
+                    <!-- 按鈕置中 （未添加，縮排進三明治選單後會靠左） -->
                     <li class="nav-item" style="margin: auto;">
                         <a class="nav-link box"
                             href="https://www.accupass.com/event/1905240852461561236433?_ga=2.223422939.1127498617.1562029435-109665224.1561613939"
@@ -171,7 +173,7 @@
                         <a class="nav-link"
                             href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fedm.managertoday.com.tw%2Flead%2F"
                             target="_blank">
-                            <img src="images/123.png" alt="">
+                            <img src="images/123.png" alt="facebook">
                         </a>
                     </li>
                 </ul>
@@ -180,15 +182,14 @@
     </nav>
 
     <section id="section1">
-        <img src="images/lead_01.png" alt="" id="img1">
+        <img src="images/lead_01.png" alt="橫條紋" id="img1">
         <div class="container">
-            <img src="images/lead_03_01.png" alt="" class="img_big">
-            <img src="images/lead_03_02.png" alt="" class="img_big">
-            <img src="images/lead_03_03_01.png" alt="">
-            <img src="images/lead_03_03_02.png" alt="">
+            <img src="images/lead_03_01.png" alt="帶人的技術" class="img_big">
+            <img src="images/lead_03_02.png" alt="教練領導X團隊經營" class="img_big">
+            <img src="images/lead_03_03_01.png" alt="藍字圓形DAY1">
+            <img src="images/lead_03_03_02.png" alt="橘字圓形DAY2">
         </div>
-
-        <img class="img-fluidd " src="images/download.png" alt="">
+        <img class="img-fluidd " src="images/download.png" alt="空白底三人圖">
     </section>
 
     <div id="section1_1">
@@ -211,6 +212,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12 mt-md-5">
+                    <!-- margin top md寬 以$spacer * 3  (0~5 消除margin或padding *0.25 *0.5 *1 *1.5 *3)-->
+                    <!-- 可以通過向$spacersSass地圖變量添加條目來添加更多尺寸 -->
                     <h3 class="text-center">講師介紹</h3>
                 </div>
                 <div class="col-md-6">
@@ -240,9 +243,7 @@
                                 <span class=" ml-md-1 mb-4">承鑫企業管理顧問有限公司創辦人</span>
                             </div>
                             <div class=" ml-md-1 mb-5 pt-md-4 text-justify">
-                                <p>擅長微行為觀察、教練式引導與情商力管理。以教練思維為核心，行為洞察為動力，協助企業改善組織運作，優化團隊能量。
-
-                                </p>
+                                <p>擅長微行為觀察、教練式引導與情商力管理。以教練思維為核心，行為洞察為動力，協助企業改善組織運作，優化團隊能量。</p>
                             </div>
                         </div>
                     </div>
@@ -275,7 +276,7 @@
             </div>
         </div>
     </section> -->
-    <!-- 控制式按鈕反應 -->
+    <!-- 控制式按鈕反應，搭配手風琴 -->
 
     <div class="container">
         <h2 class="text-center" style="padding: 16px; color: #01277a;"><strong>教練領導學</strong></h2>
@@ -336,13 +337,13 @@
                     style="padding-top: 25px; padding-bottom: 20px ; margin-top:3%;">
                     <div class="card-body">
                         <div class="row">
-                            <col-md-12 style="margin: auto">
+                            <div style="margin: auto">
                                 <ul style="margin: auto">
                                     <li> <strong>企業領導人與經營團隊：</strong>透過有效的協談能力與系統化的步驟，引導部屬主動達標</li>
                                     <li> <strong>事業發展經理人與部門主管：</strong> 以精準話術，在不同情境中發揮影響力</li>
                                     <li> <strong>知識工作者與行業菁英：</strong> 以真實案例作演練，強化關係建立及問題釐清</li>
                                 </ul>
-                            </col-md-12>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -377,7 +378,7 @@
         </div>
     </div>
 
-    <!-- 手風琴，期望使用botton控制A與B (隱藏與顯示)，範例式預設不支援雙手風琴 -->
+    <!-- 手風琴，期望使用button控制A與B (隱藏與顯示)，範例式預設不支援雙手風琴，需改js css -->
     <div class="container">
         <h2 class="text-center" style="padding: 16px; color: #01277a;"><strong>團隊經營學</strong></h2>
         <div style="border-top:1px dashed #cccccc;height: 1px;overflow:hidden"></div>
@@ -420,7 +421,8 @@
                                         <li>團隊情境實戰解析<br>
                                             - 跨部門專案型主管<br>
                                             - 新手主管或空降主管的管理議題<br>
-                                            - 推動變革的主管</li>
+                                            - 推動變革的主管
+                                        </li>
                                     </ul>
                                 </div>
                             </div>
@@ -450,6 +452,7 @@
                     </div>
                 </div>
             </div>
+            <!-- css js 呼叫不到，無法觸發手風琴隱藏效果 -->
             <div class="card">
                 <div class="card-header" style="background: #ffc82d;">
                     <a class="collapsed card-link text-center" data-toggle="collapse" href="#collapseSix"
@@ -481,13 +484,13 @@
         </div>
     </div>
 
-    
-    <section class="aaa">
-        <section class="" id="section4" style="margin-top:40px;">
+    <!-- bootstrap4 輪播 不加container即滿當前螢幕寬 ,添加後有爆版可能！ -->
+    <section class="Carousel">
+        <section id="section4" style="margin-top:40px;">
             <section id="demo" class="carousel slide" data-ride="carousel">
-                <div class="" >
-                    <div class="">
-                        <h3 class="text-center">學員回饋</h3>
+                <div>
+                    <div>
+                        <h3 class="text-center" style="padding: 9px">學員回饋</h3>
                     </div>
                 </div>
                 <!-- Indicators -->
@@ -526,13 +529,14 @@
                         <p style="font-size: 1rem;">醫療生技產業/初中階主管</p>
                     </div>
                 </div>
-                <div
-                    style="position:absolute ; top:0 ; right:0 ; bottom:0 ; left:0 ; background-color:rgba(0, 0, 0, 0.3) ;">
+                    <div style="position:absolute ; top:0 ; right:0 ; bottom:0 ; left:0 ; background-color:rgba(0, 0, 0, 0.3) ;">
+                        <!-- 輪播系統 顏色 定位 rgba(250, 0, 0, 0.3)類似櫻花色-->
                 </div>
                 <!-- Left and right controls -->
                 <a class="carousel-control-prev" href="#demo" data-slide="prev" style="position: 0;width: 40%;">
                     <span class="carousel-control-prev-icon"></span>
                 </a>
+                <!-- 調整輪播按鈕位置 width: X% -->
                 <a class="carousel-control-next" href="#demo" data-slide="next" style="position: 0; width: 40%;">
                     <span class="carousel-control-next-icon"></span>
                 </a>
@@ -543,10 +547,10 @@
     <section id="section5">
         <div class="wrap">
             <div class="row">
-                <div class="col-md-12 mt-md-5">
+                <div class="col-md-12 col-sm-12 col-xs-12 mt-md-5 mt-sm-5 mt-xs-5">
                     <h3 class="text-center">常見問題</h3>
                 </div>
-                <div class="containere" style="width:60% ; margin:0 auto; padding: 15px;">
+                <div class="container" style="width:60% ; margin:0 auto; padding: 15px;">
                     <div class="row">
                         <div class="col-md-12">
                             <h5 class="text-left"><b>Q 雙日課一定要一起購買嗎？有報名順序嗎？只上單堂課會影響學習效果嗎？</b>
@@ -598,10 +602,11 @@
                             <tr>
                                 <td style="background-color:#ff840a; color:#FFF;">每人7,400元</td>
                                 <td style="background-color:#e73e0c; color:#FFF;">每人4,000元</td>
-                                <td style="background-color: rgb(197, 197, 197)">每人4,500元</td>
+                                <td style="background-color: rgb(122, 122, 122)">每人4,500元</td>
                                 <td style="background-color: rgb(197, 197, 197); color:#e73e0c;">每人3,700元</td>
                             </tr>
                             <tr>
+                                <!-- colspan 要橫跨的列數，不可超過表格最多列，否則瀏覽器不支援可能會表格錯亂 -->
                                 <td colspan="4" style="padding: 2%;" class="text-center">
                                     •8/14教練領導：早鳥至8/8 •8/27團隊經營：早鳥至8/20<br />
                                     本課程附午餐與午茶；每堂贈送《經理人月刊》1期 (9月號起算)
@@ -611,11 +616,13 @@
                     </table>
                     <div class="text-small" style="margin-top:1rem;">
                         <p style="margin-bottom:0;">★想找人團報一起享優惠價嗎？課程專屬團報區，歡迎尋找你的學習夥伴，相約來上課！
-                            <a style="color: #fff100;" href="http://bit.ly/2Ful0ug">http://bit.ly/2Ful0ug</a>
+                            <a style="color: #fff100;" href="http://bit.ly/2Ful0ug"
+                                target="_blank">http://bit.ly/2Ful0ug</a>
                         </p>
                         <p style="margin-bottom:0;">活動洽詢：02-8773-9808 分機355　楊小姐
-                            <a style="color: #fff100;"
-                                href="karen.yang@managertoday.com.tw">karen.yang@managertoday.com.tw</a></p>
+                            <!-- Mail超連結 a href="mailto:" -->
+                            <a style="color: #fff100;" href="mailto:karen.yang@managertoday.com.tw"
+                                target="_blank">karen.yang@managertoday.com.tw</a></p>
                         <p>客服專線：02-8771-6326　 服務時間：週一到週五9:30~12:30；13:30~17:00</p>
                     </div>
                     <div class="btn">
@@ -635,6 +642,7 @@
                     <iframe
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3614.862782720021!2d121.51648511344007!3d25.038730344259253!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a975c13ae63d%3A0x99f529730969be7f!2z5by15qau55m85Z-66YeR5pyD!5e0!3m2!1szh-TW!2stw!4v1562089368430!5m2!1szh-TW!2stw"
                         width="450" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                        <!-- frameborder 框架的邊框隱藏則設置0 -->
                 </div>
             </div>
         </div>
@@ -652,17 +660,6 @@
             </div>
         </div>
     </section>
-    <!-- <footer class="text-white">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12 mt-3 text-center text-small-small">
-                    <p>主辦單位保留活動及課程大綱異動之權利，更新資訊以活動網站內容為主。<br>
-                        © 2018-2019 Business Next Publishing Corp. All Rights Reserved. 106台北市光復南路102號9樓</p>
-                </div>
-            </div>
-        </div>
-    </footer> -->
-
 </body>
 
 </html>
