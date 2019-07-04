@@ -1,0 +1,665 @@
+  <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+    <style>
+        .navbar {
+            background: #01277a;
+        }
+
+        #img1 {
+            margin-top: 65px;
+            width: 100%;
+        }
+
+        #section1 {
+            background: rgb(255, 200, 0);
+        }
+
+        #section1 .img_big {
+            width: 100%;
+        }
+
+        .front-img {
+            position: relative;
+        }
+
+        .front-img img {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            /* z-index: 1; */
+        }
+
+        #section1_1 ul {
+            margin-bottom: 0;
+        }
+
+        #section1_1 li {
+            color: red;
+            font-size: 24px;
+            font-weight: bold;
+            margin-right: 50px;
+            display: flex;
+            align-items: center;
+            padding: 20px;
+        }
+
+        #section3 {
+            background: rgb(238, 238, 238);
+        }
+
+        .wrap {
+            width: 75%;
+            display: block;
+            margin: auto;
+        }
+
+        #section4 {
+            background: #ffffff;
+        }
+
+        /* #section6 {
+            background-color: rgb(0, 78, 163);
+            color: white;
+        } */
+
+        table {
+
+            border: 1px solid white;
+        }
+
+        .btn {
+            display: flex;
+            justify-content: center;
+            margin: 20px;
+
+        }
+
+        input {
+            margin: 3px;
+            padding: 15px 60px;
+            border-radius: 10%;
+            color: white;
+        }
+
+        footer {
+            background: #01277a;
+        }
+
+        .box {
+            max-width: 85px;
+            max-height: 40px;
+            background: #007bff;
+            color: #FFF;
+            border-radius: 10px;
+            font-weight: bold;
+        }
+
+        .box :hover {
+            min-width: 80px;
+            min-height: 40px;
+            background: #007bff;
+            color:#fff;
+            font-size: 20px;
+        }
+
+         .img-fluidd {
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- navbar className, navbar-expand-md 直到中尺寸才展開 (≥768px時，寬展開為720px), navbar-dark 文字顏色, .bg-dark 背景顏色 fixed-top緊貼上 -->
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top">
+        <!-- navbar-brand 左上LOGO位置 -->
+        <div class="container">
+            <div class="navbar-brand">
+                <a href="https://www.managertoday.com.tw/?_ga=2.227224797.1127498617.1562029435-109665224.1561613939"
+                    target="_blank">
+                    <img src="images/mtlogo.svg" class="logo"></a>
+                <a href="https://www.managertoday.com.tw/school?_ga=2.227224797.1127498617.1562029435-109665224.1561613939"
+                    target="_blank">
+                    <img src="images/mtschool.svg" class="logo large-logo">
+                </a>
+            </div>
+
+            <!-- .navbar-toggler 三明治式選單按鈕 -->
+            <!--  navbar-toggler className, navbar-toggler-right 讓按鈕向右靠, data-target 必須對應下面菜單的Id-->
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+                data-target="#navbarSupportedContent">
+                <span class="navbar-toggler-icon"></span></button>
+
+            <!-- .collapse.navbar-collapse 用於外層中斷點群組和隱藏導覽列內容 -->
+            <!-- 選單項目&三明治式折疊選單 -->
+            <!-- text-center 漢堡選單出現時置中, justify-content-end 展開時菜單向右靠, -->
+            <div class="collapse navbar-collapse text-center justify-content-end" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#section1_1">精彩議程</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#container1">課程資訊</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://edm.managertoday.com.tw/lead/signup.pdf"
+                            target="_blank"><b>傳真報名</b></a>
+                    </li>
+                    <li class="nav-item" style="margin: auto;">
+                        <a class="nav-link box"
+                            href="https://www.accupass.com/event/1905240852461561236433?_ga=2.223422939.1127498617.1562029435-109665224.1561613939"
+                            target="_blank">線上報名</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link"
+                            href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fedm.managertoday.com.tw%2Flead%2F"
+                            target="_blank">
+                            <img src="images/123.png" alt="">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="section1">
+        <img src="images/lead_01.png" alt="" id="img1">
+        <div class="container">
+                    <img src="images/lead_03_01.png" alt="" class="img_big">                               
+                    <img src="images/lead_03_02.png" alt="" class="img_big">         
+                    <img src="images/lead_03_03_01.png" alt="">
+                    <img src="images/lead_03_03_02.png" alt="">
+          </div>
+
+        <img class="img-fluidd" src="images/download.png" alt="">
+    </section>
+
+    <div id="section1_1">
+        <ul style="list-style:none; display:flex; justify-content:center;">
+            <div class="row">
+                <li class="col-md-3 col-sm-12"><img src="images/check.png" alt="">
+                    <h3 style="display: inline-block;">2大標準職能進修</h3>
+                </li>
+                <li class="col-md-3 col-sm-12"><img src="images/check.png" alt="">
+                    <h3 style="display: inline-block;">1600名以上主管參訓</h3>
+                </li>
+                <li class="col-md-3 col-sm-12"><img src="images/check.png" alt="">
+                    <h3 style="display: inline-block;">97%以上滿意度推薦</h3>
+                </li>
+            </div>
+        </ul>
+    </div>
+
+    <section id="section3">
+        <div class="wrap">
+            <div class="row">
+                <div class="col-md-12 mt-md-5">
+                    <h3 class="text-center">講師介紹</h3>
+                </div>
+                <div class="col-md-6">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <img src="images/speaker_01.png" alt="" width="200" class="img-fluid">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="bottom-line">
+                                <h3 class="subheading ml-md-1 mb-2">陳煥庭</h3>
+                                <span class=" ml-md-1 mb-4">起初國際台灣分公司執行長</span>
+                            </div>
+                            <div class=" ml-md-1 mb-5 pt-md-4 text-justify">
+                                <p>國內深層溝通的權威講師，擅長教練式領導與團隊激勵，知識理論和實用技巧同時掌握。一萬場以上授課經歷，合作企業如台積電、星巴克與中國信託等。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <img src="images/speaker_02.png" alt="" width="200" class="img-fluid">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="bottom-line">
+                                <h3 class="subheading ml-md-1 mb-2">林聖修</h3>
+                                <span class=" ml-md-1 mb-4">承鑫企業管理顧問有限公司創辦人</span>
+                            </div>
+                            <div class=" ml-md-1 mb-5 pt-md-4 text-justify">
+                                <p>擅長微行為觀察、教練式引導與情商力管理。以教練思維為核心，行為洞察為動力，協助企業改善組織運作，優化團隊能量。
+
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- <section>
+        <div class="container">
+            <div class="row border-bottom justify-content-center no-gutters">
+                <div class="col text-center day_box">
+                    <ul id="tab-agenda" class="nav nav-tabs tabs-green border-0 d-inline-block font-w-600 text-sm-large text-extra-large" role="tablist">
+                        <li class="nav-item d-inline-block time-pop day_sty01" style="background: #00417e; background-color: #FFF;">
+                            <a href="#tab-day-1" id="day-1" data-toggle="tab" role="tab" aria-controls="day-1"
+                                class="nav-link text-black active" aria-expanded="true">
+                                <div class="date_sty01">Day 1 <br>8/14</div>
+                                <div>教練領導學</div>
+                            </a>
+                        </li>
+                        <li class="nav-item d-inline-block time-pop day_sty02">
+                            <a href="#tab-day-2" id="day-2" data-toggle="tab" role="tab" aria-controls="day-2"
+                                class="nav-link text-black" aria-expanded="false">
+                                <div class="date_sty01">Day 2 <br>8/27</div>
+                                <div>團隊經營學</div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section> -->
+    <!-- 控制式按鈕反應 -->
+
+    <div class="container">
+        <h2 class="text-center" style="padding: 16px; color: #01277a;"><strong>教練領導學</strong></h2>
+        <div style="border-top:1px dashed #cccccc;height: 1px;overflow:hidden"></div>
+        <h4 class="text-center" style="padding: 8px; color: #4595db;"><strong>激發部屬潛能 x 引導自主成長</strong></h4>
+        <div id="accordion">
+            <div class="card">
+                <div class="card-header" style="background: #00427e;">
+                    <a class="card-link  text-center" data-toggle="collapse" href="#collapseOne" style="color: #FFF">
+                        <div class="text"><strong>精彩課綱</strong></div>
+                    </a>
+                </div>
+                <div id="collapseOne" class="collapse show" data-parent="#accordion">
+                    <div class="card-body">
+                        <hr class="eight" style="padding: 1px; color:#000; margin: 0;">
+                        <div class="text-center">
+                            <p class="" style="margin: 0"> 8/14 09:30 - 17:00</p>
+                        </div>
+                        <hr class="eight" style="padding: 1px; color: #000; margin: 0;">
+                        <div class="row">
+                            <div class="col-md-6 col-sm-12">
+                                <div class="text-left" style="padding: 10px;">
+                                    <div class="" style="margin: 0; color:#ff8521;">
+                                        <h4> <strong>教練領導學</strong></h4>
+                                    </div>
+                                    <ul class="text-left">
+                                        <li>激發潛能的教練式領導</li>
+                                        <li>部屬需要教練式領導的時機</li>
+                                        <li>對話的關鍵技巧：讚美與激勵</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-sm-12">
+                                <div class="text-left" style="padding: 10px;">
+                                    <div class="" style="margin: 0; color:#ff8521;">
+                                        <h4> <strong>教練式領導四流程</strong></h4>
+                                    </div>
+                                    <ul class="text-left">
+                                        <li>了解部屬狀態：融入與抽離的提問技巧</li>
+                                        <li>建立信賴關係：同理心訓練＋自我表露技術</li>
+                                        <li>釐清問題核心：有效溝通的深度探詢</li>
+                                        <li>持續成長動能：引導改變的策略</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" style="background: #00427e;">
+                    <a class="collapsed card-link text-center" data-toggle="collapse" href="#collapseTwo"
+                        style="color: #FFF;">
+                        <div class="text"><strong>誰適合參與</strong></div>
+                    </a>
+                </div>
+                <div id="collapseTwo" class="collapse" data-parent="#accordion" ;
+                    style="padding-top: 25px; padding-bottom: 20px ; margin-top:3%;">
+                    <div class="card-body">
+                        <div class="row">
+                            <col-md-12 style="margin: auto">
+                                <ul style="margin: auto">
+                                    <li> <strong>企業領導人與經營團隊：</strong>透過有效的協談能力與系統化的步驟，引導部屬主動達標</li>
+                                    <li> <strong>事業發展經理人與部門主管：</strong> 以精準話術，在不同情境中發揮影響力</li>
+                                    <li> <strong>知識工作者與行業菁英：</strong> 以真實案例作演練，強化關係建立及問題釐清</li>
+                                </ul>
+                            </col-md-12>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" style="background: #00427e;">
+                    <a class="collapsed card-link text-center" data-toggle="collapse" href="#collapseThree"
+                        style="color: #FFF;">
+                        <div class="text"><strong>講師介紹</strong></div>
+                    </a>
+                </div>
+                <div id="collapseThree" class="collapse" data-parent="#accordion">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-4" style="text-align:center;">
+                                <img src="images/speaker_01.png" alt="" width="200" class="img-fluid">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="bottom-line">
+                                    <h4 class="subheading ml-md-1 mb-2" style="color: #143097;"><strong>陳煥庭</strong>
+                                    </h4>
+                                    <span class=" ml-md-1 mb-4" style="color: #143097;">起初國際台灣分公司執行長</span>
+                                </div>
+                                <div class=" ml-md-1 mb-5 pt-md-4 text-justify">
+                                    <p>國內深層溝通的權威講師，擅長教練式領導與團隊激勵，知識理論和實用技巧同時掌握。一萬場以上授課經歷，合作企業如台積電、星巴克與中國信託等。</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 手風琴，期望使用botton控制A與B (隱藏與顯示)，範例式預設不支援雙手風琴 -->
+    <div class="container">
+        <h2 class="text-center" style="padding: 16px; color: #01277a;"><strong>團隊經營學</strong></h2>
+        <div style="border-top:1px dashed #cccccc;height: 1px;overflow:hidden"></div>
+        <h4 class="text-center" style="padding: 8px; color: #4595db;"><strong>團隊發展策略 x 團隊類型拆解</strong></h4>
+        <div id="accordion">
+            <div class="card">
+                <div class="card-header" style="background: #ffc82d;">
+                    <a class="card-link  text-center" data-toggle="collapse" href="#collapseFour"
+                        style="color: #000000">
+                        <div class="text"><strong>精彩課綱</strong></div>
+                    </a>
+                </div>
+                <div id="collapseFour" class="collapse show" data-parent="#accordion">
+                    <div class="card-body">
+                        <hr class="eight" style="padding: 1px; color:#000; margin: 0;">
+                        <div class="text-center">
+                            <p class="" style="margin: 0">8/27 09:30 - 17:00</p>
+                        </div>
+                        <hr class="eight" style="padding: 1px; color: #000; margin: 0;">
+                        <div class="row">
+                            <div class="col-md-6 col-sm-12">
+                                <div class="text-left" style="padding: 10px;">
+                                    <div class="" style="margin: 0; color:#ff8521;">
+                                        <h4> <strong>從團體到團隊</strong></h4>
+                                    </div>
+                                    <ul class="text-left">
+                                        <li>團隊階段論與動力學</li>
+                                        <li>團隊的溝通樞紐：領導者的多重角色</li>
+                                        <li>驅動團隊績效的精準激勵</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-sm-12">
+                                <div class="text-left" style="padding: 10px;">
+                                    <div class="" style="margin: 0; color:#ff8521;">
+                                        <h4> <strong>從懂人學到陣型盤點</strong></h4>
+                                    </div>
+                                    <ul class="text-left">
+                                        <li>團隊雁行理論：團隊合作、輪流領導、激勵扶持</li>
+                                        <li>團隊情境實戰解析<br>
+                                            - 跨部門專案型主管<br>
+                                            - 新手主管或空降主管的管理議題<br>
+                                            - 推動變革的主管</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" style="background: #ffc82d;">
+                    <a class="collapsed card-link text-center" data-toggle="collapse" href="#collapseFive"
+                        style="color: #000;">
+                        <div class="text"><strong>誰適合參與</strong></div>
+                    </a>
+                </div>
+                <div id="collapseFive" class="collapse" data-parent="#accordion" ;
+                    style="padding-top: 25px; padding-bottom: 20px ; margin-top:3%;">
+                    <div class="card-body">
+                        <div class="row">
+                            <col-md-12 style="margin: auto">
+                                <ul style="margin: auto">
+                                    <li> <strong>企業領導人與經營團隊：</strong>掌握團隊組建要素，驅動不同特質部屬，帶他們勇於挑戰目標</li>
+                                    <li> <strong>事業發展經理人與部門主管：</strong> 靈活轉換在不同團隊中的溝通角色，協助部屬成長</li>
+                                    <li> <strong>知識工作者與行業菁英：</strong> 有效執行團隊分工及合作，讓每位成員發揮優勢</li>
+                                </ul>
+                            </col-md-12>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" style="background: #ffc82d;">
+                    <a class="collapsed card-link text-center" data-toggle="collapse" href="#collapseSix"
+                        style="color: #000;">
+                        <div class="text"><strong>講師介紹</strong></div>
+                    </a>
+                </div>
+                <div id="collapseSix" class="collapse" data-parent="#accordion">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-4" style="text-align:center;">
+                                <img src="images/speaker_03.png" alt="" width="200" class="img-fluid">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="bottom-line">
+                                    <h4 class="subheading ml-md-1 mb-2" style="color: #143097;"><strong>李河泉</strong>
+                                    </h4>
+                                    <span class=" ml-md-1 mb-4" style="color: #143097;">澤鈺智庫 總經理</span>
+                                </div>
+                                <div class=" ml-md-1 mb-5 pt-md-4 text-justify">
+                                    <p>任職金融業多年，曾任銀行消費金融業務長，帶領上千人部門。授課幽默風趣，理論與實務兼具，專長於團隊領導、新世代管理、溝通激勵等課程，連續多年獲選「華語百大講師」。
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 輪播系統有問題，待處理(爆版{右邊超出，刪除可恢復}) -->
+    <section id="section4" style="margin-top:40px;">
+        <section id="demo" class="carousel slide" data-ride="carousel">
+            <div class="row">
+                <div class="col-md-12 mt-md-5">
+                    <h3 class="text-center">學員回饋</h3>
+                </div>
+            </div>
+            <!-- Indicators -->
+            <ul class="carousel-indicators">
+                <li data-target="#demo" data-slide-to="0" class="active"></li>
+                <li data-target="#demo" data-slide-to="1"></li>
+                <li data-target="#demo" data-slide-to="2"></li>
+                <li data-target="#demo" data-slide-to="3"></li>
+                <li data-target="#demo" data-slide-to="4"></li>
+                <li data-target="#demo" data-slide-to="5"></li>
+            </ul>
+
+            <div class="carousel-inner text-center d-flex align-items-center">
+                <div class="carousel-item active my-md-5">
+                    <p style="font-size: 1.5rem;">再次回訓仍有不同收穫，推薦！</p>
+                    <p style="font-size: 1rem;">資訊產業/一般職員</p>
+                </div>
+                <div class="carousel-item my-md-5">
+                    <p style="font-size: 1.5rem;">有效學習，解決職場上溝通及帶人障礙</p>
+                    <p style="font-size: 1rem;">醫療生技產業/高階主管</p>
+                </div>
+                <div class="carousel-item my-md-5">
+                    <p style="font-size: 1.5rem;">NLP理論和應用有高度相關，可以用在實際工作中</p>
+                    <p style="font-size: 1rem;">傳統製造業/負責人</p>
+                </div>
+                <div class="carousel-item my-md-5">
+                    <p style="font-size: 1.5rem;">案例具體搭上演練操作，很受用！</p>
+                    <p style="font-size: 1rem;">觀光產業/初中階主管</p>
+                </div>
+                <div class="carousel-item my-md-5">
+                    <p style="font-size: 1.5rem;">老師講解很生動，理論和實例結合，可以充分吸收</p>
+                    <p style="font-size: 1rem;">設計產業/初中階主管</p>
+                </div>
+                <div class="carousel-item my-md-5">
+                    <p style="font-size: 1.5rem;">老師提供非常具體的應對技巧跟溝通腳本，非常有用</p>
+                    <p style="font-size: 1rem;">醫療生技產業/初中階主管</p>
+                </div>
+            </div>
+            <div style="position:absolute ; top:0 ; right:0 ; bottom:0 ; left:0 ; background-color:rgba(0, 0, 0, 0.3) ;">
+            </div>
+            <!-- Left and right controls -->
+            <a class="carousel-control-prev" href="#demo" data-slide="prev" style="position: 0;">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#demo" data-slide="next" style="position: 0;">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+        </section>
+    </section>
+
+    <section id="section5">
+        <div class="wrap">
+            <div class="row">
+                <div class="col-md-12 mt-md-5">
+                    <h3 class="text-center">常見問題</h3>
+                </div>
+                <div class="containere" style="width:60% ; margin:0 auto; padding: 15px;">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h5 class="text-left"><b>Q 雙日課一定要一起購買嗎？有報名順序嗎？只上單堂課會影響學習效果嗎？</b>
+                            </h5>
+                            <p class="text-left">
+                                A
+                                可以只報名單堂。兩堂課程內容是獨立且完整的，沒有先修或基礎需求，若您目前只對單一主題有興趣，可以只報名單堂，之後再依需要參加即可。商學院精選這兩堂課，推薦您一起參與，完整掌握帶人的技術！
+                            </p>
+                            <h5 class="text-left"><b>Q 公司申請報帳有時間限制，付款後大概多久可以收到發票呢？</b>
+                            </h5>
+                            <p class="text-left">A 您付款完成後的兩週內，我們會將發票寄出。</p>
+                            <h5 class="text-left"><b>Q 付款後若臨時有行程更動，可以退費嗎？</b>
+                            </h5>
+                            <p class="text-left">
+                                A
+                                若無法出席課程，請於課前來電或來信告知，可為您保留名額半年，半年內若對其他課程有興趣可轉移至該堂課，限轉移乙次；如需申請退款請於課程開始日前3個工作天告知，我們將收取課程的一成費用以及銀行轉帳之手續費，逾期恕不受理。
+                            </p>
+                            <h5 class="text-left"><b>Q 我們公司同事超過3位一起報名，雜誌可以分成多個月份收嗎？</b>
+                            </h5>
+                            <p class="text-left">
+                                A 雜誌分期是可以的喔。要請您在報名表備註欄上標明 "雜誌接續"，我們會為您分多個月寄送。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <section id="container1" style="background: #01277a; color: #FFF">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 mt-md-5">
+                    <h3 class="text-center" style="padding: 15px; letter-spacing:6px">課程資訊</h3>
+                </div>
+                <div class="col-lg-6 col-md-4 col-sm-12 col-xd-12">
+                    <p>
+                        地&nbsp;&nbsp;&nbsp;&nbsp;點：張榮發國際會議中心(台北市中正區中山南路11號)
+                    </p>
+                    <table width="100%">
+                        <thead>
+                            <tr style="background-color: #fff; color: #666;">
+                                <th style="color:#e73e0c;">兩堂合報最優惠</th>
+                                <th style="color:#e73e0c;">單堂早鳥優惠</th>
+                                <th>單堂一般票</th>
+                                <th style="color:#e73e0c;">單堂三人以上</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td style="background-color:#ff840a; color:#FFF;">每人7,400元</td>
+                                <td style="background-color:#e73e0c; color:#FFF;">每人4,000元</td>
+                                <td style="background-color: rgb(197, 197, 197)">每人4,500元</td>
+                                <td style="background-color: rgb(197, 197, 197); color:#e73e0c;">每人3,700元</td>
+                            </tr>
+                            <tr>
+                                <td colspan="4" style="padding: 2%;" class="text-center">
+                                    •8/14教練領導：早鳥至8/8 •8/27團隊經營：早鳥至8/20<br />
+                                    本課程附午餐與午茶；每堂贈送《經理人月刊》1期 (9月號起算)
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="text-small" style="margin-top:1rem;">
+                        <p style="margin-bottom:0;">★想找人團報一起享優惠價嗎？課程專屬團報區，歡迎尋找你的學習夥伴，相約來上課！
+                            <a style="color: #fff100;" href="http://bit.ly/2Ful0ug">http://bit.ly/2Ful0ug</a>
+                        </p>
+                        <p style="margin-bottom:0;">活動洽詢：02-8773-9808 分機355　楊小姐
+                            <a style="color: #fff100;"
+                                href="karen.yang@managertoday.com.tw">karen.yang@managertoday.com.tw</a></p>
+                        <p>客服專線：02-8771-6326　 服務時間：週一到週五9:30~12:30；13:30~17:00</p>
+                    </div>
+                    <div class="btn">
+                        <div id="btn1" style="min-width: 120px; background-color:#ff840a; border-radius: 5px;">
+                            <a class="" style="color: #FFF"
+                                href="https://www.accupass.com/event/1905240852461561236433?_ga=2.129712332.1127498617.1562029435-109665224.1561613939"
+                                target="_blank">線上報名</a></div>
+                        <div id="btn2" style="min-width: 120px; background-color:#0abaff; border-radius: 5px;">
+                            <a class="" style="color: #FFF" href="https://edm.managertoday.com.tw/lead/signup.pdf"
+                                target="_blank">下載報名表</a>
+                        </div>
+                        <!-- <input type="button" value="線上報名" id="btn1">
+                        <input type="button" value="下載報名表" id="btn2"> -->
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-8 col-sm-12 col-xd-12">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3614.862782720021!2d121.51648511344007!3d25.038730344259253!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a975c13ae63d%3A0x99f529730969be7f!2z5by15qau55m85Z-66YeR5pyD!5e0!3m2!1szh-TW!2stw!4v1562089368430!5m2!1szh-TW!2stw"
+                        width="450" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="text-white" style="background: #001e5e">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 mt-3 text-center text-small-small">
+                        <p>主辦單位保留活動及課程大綱異動之權利，更新資訊以活動網站內容為主。<br>
+                            © 2018-2019 Business Next Publishing Corp. All Rights Reserved. 106台北市光復南路102號9樓</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- <footer class="text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 mt-3 text-center text-small-small">
+                    <p>主辦單位保留活動及課程大綱異動之權利，更新資訊以活動網站內容為主。<br>
+                        © 2018-2019 Business Next Publishing Corp. All Rights Reserved. 106台北市光復南路102號9樓</p>
+                </div>
+            </div>
+        </div>
+    </footer> -->
+
+</body>
+
+</html>
