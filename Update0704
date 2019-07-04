@@ -124,10 +124,6 @@
         .img-fluidd {
             width: 100%;
         }
-        a:hover{
-            color: #FFF;
-            text-decoration:none;
-        }
     </style>
 </head>
 
@@ -635,6 +631,7 @@
                                 href="https://www.accupass.com/event/1905240852461561236433?_ga=2.129712332.1127498617.1562029435-109665224.1561613939"
                                 target="_blank">線上報名</a></div>
                         <div class="" id="btn2" style="min-width: 120px; background-color:#0abaff; border-radius: 5px; padding: 10px 15px;">
+                            <!-- text-decoration:none 超連結去底線 -->
                             <a class="" style="color: #FFF; text-decoration:none;" href="https://edm.managertoday.com.tw/lead/signup.pdf"
                                 target="_blank">下載報名表</a>
                         </div>
