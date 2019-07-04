@@ -17,8 +17,9 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
-    <div id="fb-root"></div>
-    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v3.3"></script>
+        <!-- FB分享掛件 -->
+    <!-- <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v3.3"></script> -->
 
     <style>
         .navbar {
@@ -114,14 +115,6 @@
             font-weight: bold;
         }
 
-        .box :hover {
-            min-width: 80px;
-            min-height: 40px;
-            background: #007bff;
-            color: #fff;
-            font-size: 20px;
-        }
-
         /* 底圖佔滿螢幕寬 */
         .img-fluidd {
             width: 100%;
@@ -171,17 +164,20 @@
                             href="https://www.accupass.com/event/1905240852461561236433?_ga=2.223422939.1127498617.1562029435-109665224.1561613939"
                             target="_blank">線上報名</a>
                     </li>
-                    <li class="nav-item fb-share-button" data-href="http://localhost:8080/0704.html" data-layout="button" data-size="small" style="margin: auto 5px;">
-                        <a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A8080%2F0704.html&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">分享</a>
-                    </li>
-                    <!-- 圖片型，無園角 -->
-                    <!-- <li class="nav-item">
+                    <!-- FB分享案件紐，有效但無法分享 -->
+                    <!-- <li class="nav-item fb-share-button" data-href="http://localhost:8080/0704.html" data-layout="button" data-size="small" style="margin: auto 5px;">
+                        <a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fedm.managertoday.com.tw%2Flead%2F" class="fb-xfbml-parse-ignore">分享</a>
+                    </li> -->
+
+                    <!-- 圖片型 -->
+                    <li class="nav-item">
                         <a class="nav-link"
                             href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fedm.managertoday.com.tw%2Flead%2F"
                             target="_blank">
-                            <img src="images/123.png" alt="facebook">
+                            <img src="images/123.png" alt="facebook" style="border-radius:5px">
+                            <!-- border-radius:5px 圓角 -->
                         </a>
-                    </li> -->
+                    </li>
                 </ul>
             </div>
         </div>
