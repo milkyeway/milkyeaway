@@ -116,11 +116,11 @@
             min-width: 80px;
             min-height: 40px;
             background: #007bff;
-            color:#fff;
+            color: #fff;
             font-size: 20px;
         }
 
-         .img-fluidd {
+        .img-fluidd {
             width: 100%;
         }
     </style>
@@ -152,7 +152,7 @@
             <!-- text-center 漢堡選單出現時置中, justify-content-end 展開時菜單向右靠, -->
             <div class="collapse navbar-collapse text-center justify-content-end" id="navbarSupportedContent">
                 <ul class="navbar-nav">
-                    <li class="nav-item">
+                    <li class="nav-item ">
                         <a class="nav-link" href="#section1_1">精彩議程</a>
                     </li>
                     <li class="nav-item">
@@ -182,17 +182,17 @@
     <section id="section1">
         <img src="images/lead_01.png" alt="" id="img1">
         <div class="container">
-                    <img src="images/lead_03_01.png" alt="" class="img_big">                               
-                    <img src="images/lead_03_02.png" alt="" class="img_big">         
-                    <img src="images/lead_03_03_01.png" alt="">
-                    <img src="images/lead_03_03_02.png" alt="">
-          </div>
+            <img src="images/lead_03_01.png" alt="" class="img_big">
+            <img src="images/lead_03_02.png" alt="" class="img_big">
+            <img src="images/lead_03_03_01.png" alt="">
+            <img src="images/lead_03_03_02.png" alt="">
+        </div>
 
-        <img class="img-fluidd" src="images/download.png" alt="">
+        <img class="img-fluidd " src="images/download.png" alt="">
     </section>
 
     <div id="section1_1">
-        <ul style="list-style:none; display:flex; justify-content:center;">
+        <ul class="container" style="list-style:none; display:flex; justify-content:center;">
             <div class="row">
                 <li class="col-md-3 col-sm-12"><img src="images/check.png" alt="">
                     <h3 style="display: inline-block;">2大標準職能進修</h3>
@@ -208,7 +208,7 @@
     </div>
 
     <section id="section3">
-        <div class="wrap">
+        <div class="container">
             <div class="row">
                 <div class="col-md-12 mt-md-5">
                     <h3 class="text-center">講師介紹</h3>
@@ -347,7 +347,7 @@
                     </div>
                 </div>
             </div>
-            <div class="card">
+            <div class="card ">
                 <div class="card-header" style="background: #00427e;">
                     <a class="collapsed card-link text-center" data-toggle="collapse" href="#collapseThree"
                         style="color: #FFF;">
@@ -481,59 +481,62 @@
         </div>
     </div>
 
-    <!-- 輪播系統有問題，待處理(爆版{右邊超出，刪除可恢復}) -->
-    <section id="section4" style="margin-top:40px;">
-        <section id="demo" class="carousel slide" data-ride="carousel">
-            <div class="row">
-                <div class="col-md-12 mt-md-5">
-                    <h3 class="text-center">學員回饋</h3>
+    
+    <section class="aaa">
+        <section class="" id="section4" style="margin-top:40px;">
+            <section id="demo" class="carousel slide" data-ride="carousel">
+                <div class="" >
+                    <div class="">
+                        <h3 class="text-center">學員回饋</h3>
+                    </div>
                 </div>
-            </div>
-            <!-- Indicators -->
-            <ul class="carousel-indicators">
-                <li data-target="#demo" data-slide-to="0" class="active"></li>
-                <li data-target="#demo" data-slide-to="1"></li>
-                <li data-target="#demo" data-slide-to="2"></li>
-                <li data-target="#demo" data-slide-to="3"></li>
-                <li data-target="#demo" data-slide-to="4"></li>
-                <li data-target="#demo" data-slide-to="5"></li>
-            </ul>
+                <!-- Indicators -->
+                <ul class="carousel-indicators">
+                    <li data-target="#demo" data-slide-to="0" class="active"></li>
+                    <li data-target="#demo" data-slide-to="1"></li>
+                    <li data-target="#demo" data-slide-to="2"></li>
+                    <li data-target="#demo" data-slide-to="3"></li>
+                    <li data-target="#demo" data-slide-to="4"></li>
+                    <li data-target="#demo" data-slide-to="5"></li>
+                </ul>
 
-            <div class="carousel-inner text-center d-flex align-items-center">
-                <div class="carousel-item active my-md-5">
-                    <p style="font-size: 1.5rem;">再次回訓仍有不同收穫，推薦！</p>
-                    <p style="font-size: 1rem;">資訊產業/一般職員</p>
+                <div class="carousel-inner text-center d-flex align-items-center">
+                    <div class="carousel-item active my-md-5">
+                        <p style="font-size: 1.5rem;">再次回訓仍有不同收穫，推薦！</p>
+                        <p style="font-size: 1rem;">資訊產業/一般職員</p>
+                    </div>
+                    <div class="carousel-item my-md-5">
+                        <p style="font-size: 1.5rem;">有效學習，解決職場上溝通及帶人障礙</p>
+                        <p style="font-size: 1rem;">醫療生技產業/高階主管</p>
+                    </div>
+                    <div class="carousel-item my-md-5">
+                        <p style="font-size: 1.5rem;">NLP理論和應用有高度相關，可以用在實際工作中</p>
+                        <p style="font-size: 1rem;">傳統製造業/負責人</p>
+                    </div>
+                    <div class="carousel-item my-md-5">
+                        <p style="font-size: 1.5rem;">案例具體搭上演練操作，很受用！</p>
+                        <p style="font-size: 1rem;">觀光產業/初中階主管</p>
+                    </div>
+                    <div class="carousel-item my-md-5">
+                        <p style="font-size: 1.5rem;">老師講解很生動，理論和實例結合，可以充分吸收</p>
+                        <p style="font-size: 1rem;">設計產業/初中階主管</p>
+                    </div>
+                    <div class="carousel-item my-md-5">
+                        <p style="font-size: 1.5rem;">老師提供非常具體的應對技巧跟溝通腳本，非常有用</p>
+                        <p style="font-size: 1rem;">醫療生技產業/初中階主管</p>
+                    </div>
                 </div>
-                <div class="carousel-item my-md-5">
-                    <p style="font-size: 1.5rem;">有效學習，解決職場上溝通及帶人障礙</p>
-                    <p style="font-size: 1rem;">醫療生技產業/高階主管</p>
+                <div
+                    style="position:absolute ; top:0 ; right:0 ; bottom:0 ; left:0 ; background-color:rgba(0, 0, 0, 0.3) ;">
                 </div>
-                <div class="carousel-item my-md-5">
-                    <p style="font-size: 1.5rem;">NLP理論和應用有高度相關，可以用在實際工作中</p>
-                    <p style="font-size: 1rem;">傳統製造業/負責人</p>
-                </div>
-                <div class="carousel-item my-md-5">
-                    <p style="font-size: 1.5rem;">案例具體搭上演練操作，很受用！</p>
-                    <p style="font-size: 1rem;">觀光產業/初中階主管</p>
-                </div>
-                <div class="carousel-item my-md-5">
-                    <p style="font-size: 1.5rem;">老師講解很生動，理論和實例結合，可以充分吸收</p>
-                    <p style="font-size: 1rem;">設計產業/初中階主管</p>
-                </div>
-                <div class="carousel-item my-md-5">
-                    <p style="font-size: 1.5rem;">老師提供非常具體的應對技巧跟溝通腳本，非常有用</p>
-                    <p style="font-size: 1rem;">醫療生技產業/初中階主管</p>
-                </div>
-            </div>
-            <div style="position:absolute ; top:0 ; right:0 ; bottom:0 ; left:0 ; background-color:rgba(0, 0, 0, 0.3) ;">
-            </div>
-            <!-- Left and right controls -->
-            <a class="carousel-control-prev" href="#demo" data-slide="prev" style="position: 0;">
-                <span class="carousel-control-prev-icon"></span>
-            </a>
-            <a class="carousel-control-next" href="#demo" data-slide="next" style="position: 0;">
-                <span class="carousel-control-next-icon"></span>
-            </a>
+                <!-- Left and right controls -->
+                <a class="carousel-control-prev" href="#demo" data-slide="prev" style="position: 0;width: 40%;">
+                    <span class="carousel-control-prev-icon"></span>
+                </a>
+                <a class="carousel-control-next" href="#demo" data-slide="next" style="position: 0; width: 40%;">
+                    <span class="carousel-control-next-icon"></span>
+                </a>
+            </section>
         </section>
     </section>
 
